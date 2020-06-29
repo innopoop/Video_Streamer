@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="content.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Extension</title>
+  </head>
+  <body>
+    <!-- <button>Do Something</button> -->
+    <!--Include Youtube Logo here & API info-->
+    <div class="top">
+    <h4>Video Streamer</h4>
+    <p>Want to stream your favorite video without having to place the same video in the playlist multiple times? Video streamer automatically processes a youtube playlist and uses the title provided in the "Video Name" field to gauge 10 minutes of other content before re-watching the same video again, all without the user having to click a single button!</p>
+    <p>Instructions:</p>
+    <ol>
+    <li>Enter a playlist with the video that you want to stream inside of it</li>
+    <li>Enter a word or phrase that is in your video title to help the program find the correct video to stream</li>
+    <li>Click stream!</li>
+  </ol>
+    <p>Make sure you are on the same window as the tab for Youtube. If you click off of the window, simply click back onto the window before the video finishes</p>
+    <p>Happy streaming!</p>
+  </div>
+    <form name="playlist-song" id="playlist-song" method="POST">
+      <!--Input for playlist link-->
+      <div class="col">
+      <label for="playlist">Playlist Link:</label> <input id="playlist" type="text" name="playlist" /> 
+      <!--Input for video you want to increase viewcount for-->
+      <label for="song">Video Name</label><input id="song" type="text" name="song" />
+      <button type="submit">Stream!</button>
+    </div>
+  </body>
+  <script src="ext.js" charset="UTF-8"></script>
+</html>

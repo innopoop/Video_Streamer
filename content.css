@@ -1,0 +1,45 @@
+/*popup CSS*/
+button {
+  margin-top: 3vmin;
+}
+
+body {
+  margin: 5px;
+  width: 300px;
+  height: 500px;
+}
+
+input {
+  width: 290px;
+}
+
+button {
+  width: 70px;
+  margin: 3% auto 0 auto;
+}
+
+form {
+  position: fixed;
+  bottom: 3%;
+}
+
+.top {
+  max-height: 60%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+#error {
+  position: fixed;
+  z-index: 1;
+  top: 1%;
+  margin: 5%;
+  overflow: hidden;
+  padding: 3%;
+  background-color: rgb(255, 253, 225);
+  border-radius: 5px;
+  border: 1px solid rgb(168, 168, 130);
+}
